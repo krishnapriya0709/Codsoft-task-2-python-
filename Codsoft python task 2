@@ -1,0 +1,26 @@
+print("Welcome to Simple Calculator")
+
+while True:
+    print("\nSELECT OPERATION:\n1. ADDITION \n2. SUBRACTION \n3. MULTIPLICATION \n4. DIVISION \n5. EXIT")
+    c=input("\nENTER YOUR CHOICE:")
+    if c=="5":
+        print("Exiting")
+        break
+
+    a=int(input("Enter number:"))
+    b=int(input("Enter number:"))
+
+    if c == "1":
+        print("Result:",a+b)
+    elif c =="2":
+        print("Result:",a-b)
+    elif c == "3":
+        print("Result:",a*b)
+    elif c =="4":
+        if b==0:
+            print("!!! DIVISION BY ZERO !!!")
+        else:
+            print("Result:",a/b)
+    
+    else:
+        print("Invalid Choice")
